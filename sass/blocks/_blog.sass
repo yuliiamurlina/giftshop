@@ -1,8 +1,7 @@
 .start
     height: 240px
     background-color: $main_color
-    display: flex
-    flex-direction: row
+    @include flex-box 
     justify-content: space-around
     &__title
         font-size: 32px
@@ -13,10 +12,8 @@
         font-size: 32px
         margin-top: 10px
     .buttons
-        display: flex
-        flex-direction: row
+        @include flex-box 
         width: 416px
-        justify-content: space-between
         margin-top: 96px
         .find
             @include button
