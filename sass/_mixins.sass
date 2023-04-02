@@ -1,0 +1,27 @@
+$main_color: #F7941E
+$main_text_color: #000
+$transparent_button: $main_color 1px solid
+
+@mixin button
+    display: block
+    border: none
+    width: 200px
+    height: 60px
+    font-size: 18px
+    line-height: 22px
+    text-align: center
+    text-transform: uppercase
+    border-radius: 5px
+    cursor: pointer
+    &:hover
+        background-color: #fff
+        color: $main_color
+        transition: 1s all
+
+@mixin transp_button
+    border: $transparent_button
+    color: $main_color
+    &:hover 
+        background-color: $main_color
+        color: #fff
+        transition: 1s all

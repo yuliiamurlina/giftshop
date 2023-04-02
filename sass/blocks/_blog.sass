@@ -1,0 +1,100 @@
+.start
+    height: 240px
+    background-color: $main_color
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    &__title
+        font-size: 32px
+        line-height: 45px
+        font-weight: 800
+        margin-top: 80px
+    &__subtitle
+        font-size: 32px
+        margin-top: 10px
+    .buttons
+        display: flex
+        flex-direction: row
+        width: 416px
+        justify-content: space-between
+        margin-top: 96px
+        .find
+            @include button
+            height: 48px
+            background-color: #000
+            color: #fff
+            &:hover
+                color: #000
+        .instruction
+            @include button
+            height: 48px
+            color: #000
+            background-color: $main_color
+            border: 1px #000 solid
+            &:hover
+                border: none
+
+
+.blog
+    height: 1026px
+    padding-top: 88px 
+    &__title
+        font-size: 38px
+        line-height: 38px
+        text-align: center
+    &__text
+        margin-top: 23px
+        font-size: 18px
+        text-align: center
+    &__wrapper
+        padding: 80px 135px
+        .item-main
+            display: flex
+            margin: 0 auto
+            background-color: #231F20
+            height: 370px
+            max-width: 1170px
+            img
+                width: 400px
+            &__wrapper
+                padding: 63px 0 0 78px
+                color: #fff
+                .suptitle
+                    font-size: 14px
+                .title
+                    font-size: 48px
+                    line-height: 58px
+                    margin: 27px 0 60px
+                    max-width: 492px
+                .link
+                    font-size: 18px
+                    color: #fff
+                    text-decoration: none
+        .items
+            display: flex
+            margin: 0 auto
+            height: 330px
+            max-width: 1170px
+            .item
+                margin-top: 40px
+                box-sizing: border-box
+                width: 570px
+                height: 290px
+                margin-right: 30px
+                padding: 48px
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                &:last-child
+                    margin-right: 0
+                &:hover
+                    box-shadow: none
+                &__title
+                    font-size: 24px
+                    font-weight: 700
+                    line-height: 34px
+                &__text
+                    margin: 16px 0 36px
+                    font-size: 18px
+                    line-height: 25px
+                &__link
+                    text-decoration: none
+                    font-size: 14px

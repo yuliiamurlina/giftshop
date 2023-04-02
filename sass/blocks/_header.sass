@@ -1,0 +1,33 @@
+.header
+    position: fixed
+    width: 100%
+    background-color: #fff
+    box-sizing: border-box
+    height: 116px
+    display: flex
+    justify-content: space-between
+    &__logo
+        height: 143px
+        cursor: pointer
+    &__menu
+        display: flex
+        flex-direction: row
+        width: 331px
+        justify-content: space-between
+        margin: auto
+        &_item
+            &:hover
+                font-weight: 900
+            a
+                color: $main_text_color
+                text-decoration: none
+                font-size: 18px
+                line-height: 22px     
+    &__button
+        margin: 36px 34px 0 0
+        @include button
+        width: 150px
+        height: 43px
+        @include transp_button
+        background-color: #fff
+        

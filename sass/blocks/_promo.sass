@@ -1,0 +1,32 @@
+.promo
+    padding-top: 116px
+    height: 700px
+    background-color: #F1F1F2
+    display: flex
+    flex-direction: row
+    &__wrapper
+        width: 50%
+        display: block
+        height: 430px
+        width: 410px
+        margin: auto
+        h1
+            font-size: 56px
+            font-weight: 550
+        p
+            font-size: 20px
+            margin-top: 30px
+            line-height: 140.62%
+        button
+            margin-top: 56px
+            @include button
+            background-color: $main_color
+            color: #fff
+            
+    &__photo
+        width: 50%
+        img
+            width: 100%
+            max-height: 700px
+            object-fit: cover
+            float: right
