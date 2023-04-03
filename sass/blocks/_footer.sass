@@ -1,51 +1,46 @@
 .footer
     background-color: #FAFAFA
-    height: 410px
+    height: 560px
     box-sizing: border-box
     padding-top: 115px
     &__menu
-        display: flex
+        @include flex-box
         margin: 0 auto 
-        width: 614px
+        width: 62%
         height: 80px
         vertical-align: middle
-        justify-content: space-between
-        position: relative
         .item
             a
                 text-decoration: none
                 color: $main_text_color
-                font-size: 14px
+                font-size: 25px
                 font-weight: 700
             img
                 margin-top: -81px
     hr
-        width: 1000px
+        width: 65%
         border: 1px #000 solid
     &__social
-        display: flex
-        flex-direction: row
+        @include flex-box 
         margin: 55px auto 72px
-        width: 296px
-        justify-content: space-between
+        width: 450px
         .item
             background-color: #000
-            width: 38.4px
-            height: 38.4px
+            width: 55px
+            height: 55px
             border-radius: 50%
             box-sizing: border-box
-            padding: 9px
+            padding: 12px
             a
                 text-decoration: none
                 span
                     color: #fff
-                    font-size: 20px
+                    font-size: 30px
     &__privacy
-        width: 248px
+        width: 340px
         margin: 0 auto
-        display: flex
-        justify-content: space-between
-        font-size: 14px
+        @include flex-box 
+        font-size: 21px
         a
             text-decoration: none
             color: #000

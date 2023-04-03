@@ -1,0 +1,350 @@
+
+  //notebook
+@media (max-width: 1921px) 
+    .header   
+        height: 116px
+        &__logo
+            height: 142px
+        &__menu
+            width: 331px
+            a
+                font-size: 18px
+        &__button
+            @include button
+            @include transp_button
+            width: 150px
+            height: 43px
+
+    .promo
+        padding-top: 116px
+        height: 700px
+        &__wrapper
+            width: 510px
+            h1
+                font-size: 56px
+            p
+                font-size: 20px
+                margin-top: 30px
+            button
+                @include button
+
+    .second
+        height: 600px
+        &__wrapper
+            &_text
+                max-width: 440px
+                h2
+                    font-size: 32px
+                p
+                    margin-top: 23px
+                    font-size: 20px
+                    line-height: 28px
+                button
+                    margin-top: 35px
+                    @include button
+                    @include transp_button
+
+    .occasion
+        height: 500px
+        &__title
+            font-size: 32px
+        &__text
+            font-size: 18px
+            margin: 23px 0 64px
+        .item
+            width: 215px
+            height: 436px
+            &__wrapper
+                padding: 24px
+                .title
+                    font-size: 20px
+                .link
+                    font-size: 14px
+    
+    .start
+        height: 240px
+        &__title
+            font-size: 32px
+            margin: 80px 0 10px
+        &__subtitle
+            font-size: 32px
+        .buttons
+            width: 416px
+            .find
+                @include button
+                height: 48px
+            .instruction
+                @include button
+                height: 46px
+                color: #000
+                background-color: $main_color
+                border: 1px #000 solid
+
+    .blog
+        height: 1100px
+        padding-top: 88px
+        &__title
+            font-size: 38px
+        &__text
+            font-size: 18px
+            margin-top: 23px
+        &__wrapper
+            .item-main
+                height: 370px
+                .suptitle
+                    font-size: 14px
+                .title
+                    font-size: 48px
+                    line-height: 58px
+                    max-width: 492px
+                    margin: 27px 0 60px
+                .link
+                    font-size: 18px
+            .items
+                // height: 330px
+                .item
+                    min-height: 366px
+                    &__title
+                        font-size: 24px
+                        line-height: 34px
+                    &__text
+                        margin: 16px 0 36px
+                        font-size: 18px
+                    &__link
+                        font-size: 14px
+        
+    .footer
+        height: 410px
+        &__menu
+            width: 70%
+            .item
+                a
+                    font-size: 14px
+        &__social
+            width: 296px
+            .item
+                width: 38.4px
+                height: 38.4px
+                padding: 8px
+                a
+                    span
+                        font-size: 22px
+        &__privacy
+            width: 248px
+            font-size: 14px
+
+    //tablet
+@media (max-width: 992px) 
+    .promo
+        &__wrapper
+            width: 380px
+    
+    .occasion
+        height: 435px
+        .item
+            width: 182px
+            height: 320px
+            &__wrapper
+                .link
+                    top: 127px
+    
+    .start
+        height: 217px
+        padding: 0 50px
+        &__title
+            margin-top: 30px
+        .buttons
+            flex-direction: column
+            margin: 10px 0 0 35px
+            justify-content: space-around
+            width: 50%
+            height: 180px
+
+            
+    
+// small tablet
+@media (max-width: 768px)
+    .header
+        height: 75px
+        &__logo
+            height: 92px
+        &__menu
+            display: none
+            flex-direction: column
+            position: absolute
+            height: 100%
+        &__button
+            display: none
+        &__mobile
+            display: block
+            margin: 26px 18px 0 0
+            div
+                width: 30px
+                height: 3px
+                background-color: #000
+                margin-bottom: 3px
+                cursor: pointer
+
+    .promo
+        padding-top: 76px
+        &__photo
+            display: none
+        &__wrapper
+            background: url("../images/Background_layer.png") center center/cover no-repeat
+            width: 100%
+            height: 100%
+            padding: 70px
+            h1
+                font-size: 48px
+                width: 250px
+            p
+                width: 250px
+    
+    .second
+        height: 450px
+        &__photo
+            display: none
+        &__wrapper
+            width: 100%
+            &_text
+                margin: 65px auto 0
+    
+    .occasion
+        height: auto
+        padding: 65px 80px 100px
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: center
+            .item
+                width: 175px
+                height: 285px
+                margin-bottom: 20px
+                margin-right: 20px
+                &:nth-child(2)
+                    margin-right: 0
+                &__wrapper
+                    padding: 15px
+                    .link
+                        top: 80px
+    
+    .start
+        &__subtitle
+            font-size: 28px
+
+    .blog
+        height: auto
+        &__wrapper
+            .item-main__wrapper
+                padding-top: 36px
+                padding-left: 35px
+                .title
+                    font-size: 37px
+            .items
+                flex-direction: column
+                .item
+                    padding: 35px
+                    width: 100%
+                    height: 305px
+                    min-height: 0
+                    &__text
+                        line-height: 30px
+    
+
+    // mobile phone
+@media ( max-width: 576px )
+    .promo
+        height: 416px
+        &__wrapper
+            h1
+                font-size: 45px
+            p
+                display: none
+    
+    .second
+        &__wrapper
+            &_text
+                margin-top: 40px
+                h2
+                    font-size: $h2_mobile
+                    text-align: center
+                p
+                    font-size: $p_mobile
+                    line-height: 27px
+                button
+                    @include small_button
+                    margin: 15px auto
+
+    .occasion
+        padding: 48px 66px 53px
+        &__title
+            font-size: $h2_mobile
+        &__text
+            font-size: $p_mobile
+        &__wrapper
+            .item
+                display: flex
+                flex-direction: row
+                width: 300px    
+                height: 129px
+                margin-right: 0
+                img
+                    min-height: 0
+                    width: 50%
+                    height: 100%
+
+    .start
+        flex-direction: column
+        height: 160px
+        padding: 0
+        &__title
+            display: none
+        &__subtitle
+            display: none
+        .buttons
+            height: 138px
+            margin: 0 auto
+            .find
+                @include small_button
+            .instruction
+                @include small_button
+
+    .blog
+        &__title
+            font-size: $h2_mobile
+        &__text
+            font-size: $p_mobile
+            width: 90%
+        &__wrapper
+            .item-main
+                flex-direction: column
+                img 
+                    width: 100%
+                    height: 35% 
+                .title
+                    font-size: $h2_mobile
+                    line-height: 41px
+                    margin: 21px 0 34px
+            .items
+                .item
+                    margin-top: 20px
+                    padding: 25px
+                    height: auto
+                    &__title
+                        font-size: 19px
+                        line-height: 23px
+                    &__text
+                        font-size: 15px
+                        line-height: 21px
+
+    .footer
+        padding-top: 30px
+        height: 245px
+        &__menu
+            height: 54px
+            .item
+                img
+                    display: none
+        hr
+            display: none
+        &__social
+            margin: 15px auto 40px

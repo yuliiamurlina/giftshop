@@ -1,6 +1,10 @@
 $main_color: #F7941E
 $main_text_color: #000
 $transparent_button: $main_color 1px solid
+$h2_big: 60px
+$p_big: 37px
+$h2_mobile: 28px
+$p_mobile: 16px
 
 @mixin flex-box 
     display: flex
@@ -31,3 +35,15 @@ $transparent_button: $main_color 1px solid
         background-color: $main_color
         color: #fff
         transition: 1s all
+
+@mixin big_button
+    width: 340px
+    height: 120px
+    border-radius: 10px
+    font-size: 30px
+
+@mixin small_button
+    width: 183px
+    font-size: 16px
+    height: 54px
+    

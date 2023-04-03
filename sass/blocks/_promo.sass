@@ -1,25 +1,27 @@
 .promo
-    padding-top: 116px
-    height: 700px
+    padding-top: 156px
+    height: 930px
     background-color: #F1F1F2
     display: flex
     flex-direction: row
     &__wrapper
-        width: 50%
+        padding: 50px
         display: block
         height: 430px
-        width: 410px
+        width: 910px
         margin: auto
+        box-sizing: border-box
         h1
-            font-size: 56px
+            font-size: 79px
             font-weight: 550
         p
-            font-size: 20px
-            margin-top: 30px
+            font-size: 40px
+            margin-top: 48px
             line-height: 140.62%
         button
             margin-top: 56px
             @include button
+            @include big_button
             background-color: $main_color
             color: #fff
             
@@ -27,6 +29,6 @@
         width: 50%
         img
             width: 100%
-            max-height: 700px
+            height: 100%
             object-fit: cover
             float: right
