@@ -1,8 +1,19 @@
-const ocassionItemImg = document.querySelectorAll(".occasion__wrapper img");
-console.log(ocassionItemImg);
+openMobileMenu();
+closeMobileMenu();
 
-ocassionItemImg.forEach((img) => {
-  // let width = ocassionItemImg.width;
-  img.style.height = ocassionItemImg.width;
-  console.log(img.width);
-});
+const mobileMenu = document.querySelector(".menu");
+
+function openMobileMenu() {
+  const hamburger = document.querySelector(".header__mobile");
+
+  hamburger.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+  });
+}
+
+function closeMobileMenu() {
+  const close = document.querySelector(".close");
+  close.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+  });
+}

@@ -166,13 +166,29 @@
 @media (max-width: 768px)
     .header
         height: 75px
+        &__menu
+            display: flex
+            flex-direction: column
+        &__item
+            margin-bottom: 25px  
+            border-bottom: 1px $main_color solid 
+            a
+                color: $main_text_color
+                text-decoration: none
+                font-size: 28px
+        &__button
+            margin-top: 30px
+            @include button
+            background-color: $main_color
+            color: #fff 
+            &:hover
+                background-color: $main_color
+                color: #fff
+
         &__logo
             height: 92px
         &__menu
             display: none
-            flex-direction: column
-            position: absolute
-            height: 100%
         &__button
             display: none
         &__mobile

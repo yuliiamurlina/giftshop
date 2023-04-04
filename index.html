@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 <body>
 
     <div class="header">
+        
         <img class="header__logo" src="images/Logo.png"></img>
     
         <li class="header__menu">
@@ -31,6 +40,23 @@
             <div></div>
             <div></div>
         </div>
+    </div>
+
+
+    <div class="menu">
+        <div class="menu__block">
+            <span class="close">&#10006;</span>
+            <nav>
+                <ul class="list">  
+                    <li class="link"><a href="#">Home</a></li>
+                    <li class="link"><a href="#">About Us</a></li>
+                    <li class="link"><a href="#">Services</a></li>
+                    <li class="link"><a href="#">Blogs</a></li>
+                </ul>
+                <button> Gift Finder</button>
+            </nav>
+        </div>
+        <div class="menu_overlay"></div>
     </div>
 
 
@@ -192,6 +218,20 @@
             <a href="#">Privacy — Terms</a>
        </div>
 
+    </div>
+
+    <div class="modal">
+        <div class="close"></div>
+        <div class="modal__wrapper">
+            <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
+            <p class="modal__descr">и мы перезвоним вам в течении 10 минут</p>
+            <form class="modal-form" action="#">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
+                <button class="button">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
     </div>
    
     <script src="script.js"></script>
