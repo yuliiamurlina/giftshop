@@ -31,8 +31,8 @@
             <ul class="header__menu_item"><a href="#">Blogs</a></ul>
         </li>
     
-        <button class="header__button">
-            <span>Gift Finder</span>
+        <button class="header__button button">
+            Gift Finder
         </button>
 
         <div class="header__mobile">
@@ -53,7 +53,7 @@
                     <li class="link"><a href="#">Services</a></li>
                     <li class="link"><a href="#">Blogs</a></li>
                 </ul>
-                <button> Gift Finder</button>
+                <button class="button"> Gift Finder</button>
             </nav>
         </div>
         <div class="menu_overlay"></div>
@@ -65,8 +65,8 @@
                 <h1>Find a gift for your wife or girlfriend</h1>
                 <p>Struggling to find a gift for your wife or girlfriend?
                 No problem!</p>
-                <button>
-                    <span>Find gift now</span>
+                <button class="button">
+                    Find gift now
                 </button>
             </div>
             <div class="promo__photo">
@@ -87,7 +87,7 @@
                     is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few
                     perfect gift
                     options.</p>
-                <button>
+                <button class="button">
                     <span>Learn More</span>
                 </button>
            </div>
@@ -138,8 +138,8 @@
             <h3 class="start__subtitle">Sign up or contact us</h3>
         </div>
         <div class="buttons">
-            <button class="find">Find gift now</button>
-            <button class="instruction">how it works</button>
+            <button class="find button">Find gift now</button>
+            <button class="instruction button">how it works</button>
         </div>
     </div>
 
@@ -220,17 +220,19 @@
 
     </div>
 
-    <div class="modal">
-        <div class="close"></div>
-        <div class="modal__wrapper">
-            <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
-            <p class="modal__descr">и мы перезвоним вам в течении 10 минут</p>
-            <form class="modal-form" action="#">
-                <input name="name" type="text" placeholder="Ваше имя">
-                <input name="phone" placeholder="Ваш телефон">
-                <input name="email" type="email" placeholder="Ваш E-mail">
-                <button class="button">заказать кОНСУЛЬТАЦИЮ</button>
-            </form>
+    <div class="overlay">
+        <div class="modal">
+            <span class="modal__close">&#10006;</span>
+            <div class="modal__wrapper">
+                <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
+                <p class="modal__descr">и мы перезвоним вам в течении 10 минут</p>
+                <form class="modal-form" action="#">
+                    <input name="name" type="text" placeholder="Ваше имя">
+                    <input name="phone" placeholder="Ваш телефон">
+                    <input name="email" type="email" placeholder="Ваш E-mail">
+                    <button class="button">заказать кОНСУЛЬТАЦИЮ</button>
+                </form>
+            </div>
         </div>
     </div>
    
